@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #B9D9EB;    
+}
+
+nav{
+    background-color: azure;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    border: 1px solid slategray;
+}
+
+.nav-name{
+    font-size: 1.4rem;
+    color: cornflowerblue;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    position: sticky;
+    top: 0;
+    
+    margin: 2rem auto;
+}
+
+.nav-links{
+    text-decoration: none;
+    font-size: 1.4rem;    
+}
+
+/* Responsives navbar */
+
+@media only screen and (min-width: 768px){
+
+    nav{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 1rem;
+    }
+ 
+    .nav-links{
+     margin-right: 1.2rem;
+    }
+ 
+ }
+
+/* resume */
+
+
+.container{
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title{
+    margin-bottom: 1rem;
+}
+
+.sub-title{
+    font-size: 1.3rem
+}
+
+.line{
+    width: 100px;
+    background-color: #333;
+    height: 2px;
+    margin: 0 auto;
+}
+
+.inner-line{
+    width: 50px;
+    height: 2px;
+    background-color: rgb(4, 4, 255);
+}
+
+
+.resume-category{
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    
+}
+
+.duration{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.tenure{
+    font-size: 1.2rem;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 10px;
+    padding: .7rem .6rem;
+}
+
+.design{
+    border: 1px solid rgb(209, 190, 190);
+    height: 2px;
+    /* background-color: black; */
+    margin: 1rem 2rem;
+}
+
+.design-circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #0a70a0;
+    position: relative;
+    right: -270px;
+}
+
+.details{
+    margin: 1rem 0;
+}
+
+.institute{
+    margin-top: 3rem;
+}
+
+.position{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+/* responsive resume */
+
+@media only screen and (min-width: 768px){
+    
+    .container{
+        padding: 3rem 15rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .resume-category{
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+    }
+
+    .design{
+        border-left: 1px solid rgb(209, 190, 190);
+        height: 100px;
+        background-color: rgb(209, 190, 190);
+        margin: 0 auto;
+    }
+
+    .institute{
+        margin: 0;
+    }
+
+    .design-circle{
+        width: 25px;
+        height: 25px;
+        left: .5px;
+        top: 35px;
+    }
+
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
